@@ -18,6 +18,58 @@ html{
 	--secondary-heading: #5483b3;
 }
 
+body {
+	transition: background-color 0.5s ease;
+	
+  }
+  
+  .toggle-container {
+	display: flex;
+	align-items: center;
+  }
+  
+  .toggle-checkbox {
+	display: none;
+  }
+  
+  .toggle-label {
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+  }
+  
+  .toggle-inner {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #ccc; /* Day mode background color */
+	border-radius: 15px;
+	transition: background-color 0.5s ease;
+  }
+  
+  .toggle-switch {
+	display: block;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	transition: transform 0.5s ease;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label .toggle-inner {
+	background-color: #052659; /* Night mode background color */
+  }
+  
+  .toggle-checkbox:checked + .toggle-label .toggle-switch {
+	transform: translateX(30px);
+  }
+  
+
 /*   *** Reusable Code Starts ***   */
 button.btn{
 	background-color: var(--primary-clr);

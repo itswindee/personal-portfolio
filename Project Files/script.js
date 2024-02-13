@@ -5,6 +5,17 @@ var menuBtn = document.querySelector('.menu-btn');
 var menu = document.querySelector('.nav-links');
 var menuLinks = document.querySelectorAll('.nav-links li a');
 
+const toggleSwitch = document.querySelector('.toggle-checkbox');
+
+toggleSwitch.addEventListener('change', () => {
+  if (toggleSwitch.checked) {
+    document.body.style.backgroundColor = '#333'; // Night mode background color
+  } else {
+    document.body.style.backgroundColor = '#FFFFFF'; // Day mode background color
+  }
+});
+
+
 menuBtn.addEventListener('click', activeClass);
 
 function activeClass(){
