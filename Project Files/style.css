@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 html{
 	scroll-behavior: smooth;
@@ -19,11 +21,19 @@ html{
 }
 
 
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+} 
 body{
 	width: 100%;
 	min-height: 100vh;
 	background-color: #ffffff;
+	opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
 }
+
 .container{
 	position: relative;
 	width: 100%;
@@ -1199,6 +1209,8 @@ button.contact-btn{
 		border: 1px solid #ddd;
 	}
 }
+
+
 
 /*   === Screen Size 600px or Smaller  ===   */
 @media(max-width: 600px){

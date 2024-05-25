@@ -1,4 +1,13 @@
-// Script File
+
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('header, main, footer'); // Select all elements you want to animate
+    elements.forEach((element, index) => {
+        element.classList.add('fade-in');
+        element.style.animationDelay = `${index * 0.3}s`;
+    });
+});
+
+
 
 // Home Section Starts
 var menuBtn = document.querySelector('.menu-btn');
@@ -61,6 +70,8 @@ $('.gallery').magnificPopup({
 	}
 })
 // Portfolio Section Ends
+
+
 
 // Testimonials Section Starts
 $('.testimonials-container').owlCarousel({
