@@ -64,15 +64,28 @@
 	<!--   === Hero Starts ===   -->
 	<div class="hero">
 		<div class="hero-text">
-			<h3>Hello!</h3>
-			<h1>I am Emily Zhu</h1>
-			<h2>Software Developer</h2>
+			<div class="cols cols0">
+				<h1>Hi, it's Emily</h1>
+				<h1>I'm a <span class="multiText">Coder</span></h1>
+			</div>
 			<p>A developer located in Altanta, GA. I love to code, build things, and everything in between!</p>
 			<button class="btn download-btn">
-				<a href="https://www.dropbox.com/scl/fi/aou5rwd1ra62fc9qm6gsp/Emily-Zhu-Developer-Resume-edited.pdf?rlkey=984wbf5vu5q2legfe4qlhdhdp&dl=0" download="Emily Zhu CV.pdf" class="download-link" target="_blank">Download CV</a>
+				<a href="https://www.dropbox.com/scl/fi/etkvkohodgu711dzwoshr/Emily-Zhu-Software-Engineer-Resume-with-links.pdf?rlkey=13rcpvi3u4egtj10f0kv21h05&st=ff16ph7g&dl=0" download="Emily Zhu CV.pdf" class="download-link" target="_blank">Download CV</a>
 			</button>
 
+			<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+			<script>
+				var typed = new Typed('.multiText', {
+					strings: ["Data Analyst", "Web Designer", "Web Developer", "Athlete", "Coach", "Leader"],
+					typeSpeed: 80,
+					backSpeed: 80,
+					loop: true
+				});
+			</script>
+
 		</div>
+
+		
 
 		<div class="hero-image">
 			<img src="images/hero-img.png">
