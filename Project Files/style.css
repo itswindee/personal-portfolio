@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
+
 *{
 	margin: 0;
 	padding: 0;
@@ -623,6 +624,44 @@ button.contact-btn{
 /*   *** Services Section Styling Ends   */
 
 /*   *** Resume Section Styling Starts   */
+.custom-right-align{
+	text-align: right;
+}
+.resume-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.column-left,
+.column-right {
+    flex: 1;
+}
+
+.sub-heading {
+    margin-bottom: 20px;
+}
+
+.resume-contents .box {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .resume-row {
+        flex-direction: column;
+    }
+
+    .column-left,
+    .column-right {
+        width: 100%;
+    }
+}
 .resume{
 	background-color: var(--bg-clr-one);
 }
@@ -693,6 +732,8 @@ button.contact-btn{
 	color: var(--secondary-heading);
 	font-weight: 500;
 }
+
+  
 /*   *** Resume Section Styling Ends ***  */
 
 /*   *** Portfolio Section Styling Starts ***   */
