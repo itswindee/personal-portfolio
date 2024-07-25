@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('header, main, footer'); // Select all elements you want to animate
     elements.forEach((element, index) => {
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Home Section Starts
+// home section
 var menuBtn = document.querySelector('.menu-btn');
 var menu = document.querySelector('.nav-links');
 var menuLinks = document.querySelectorAll('.nav-links li a');
@@ -43,9 +44,15 @@ function scrollFunction(){
 		homeSection.classList.remove('active');
 	}
 }
-// Home Section Ends 
 
-// Portfolio Section Starts
+// portfolio section
+function openPopup() {
+    document.getElementById("project-popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("project-popup").style.display = "none";
+}
 var $galleryContainer = $('.gallery').isotope({
 	itemSelector: '.item',
 	layoutMode: 'fitRows'
@@ -61,6 +68,7 @@ $('.button-group .button').on('click', function(){
 	})
 })
 
+
 // magnific popup
 $('.gallery').magnificPopup({
 	delegate: '.overlay a',
@@ -69,11 +77,10 @@ $('.gallery').magnificPopup({
 		enabled: true
 	}
 })
-// Portfolio Section Ends
 
 
 
-// Testimonials Section Starts
+// reviews section
 $('.testimonials-container').owlCarousel({
     loop:true,
     autoplay:true,

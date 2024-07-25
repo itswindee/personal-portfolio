@@ -36,6 +36,7 @@
             font-size: 45x; 
             font-weight: bold; 
         }
+		
 	</style>
 
 
@@ -56,7 +57,7 @@
 			<li><a href="#skills">Skills</a></li>
 			<li><a href="#experience">Resume</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#testimonials">Reviews</a></li>
+			<!--<li><a href="#testimonials">Reviews</a></li> -->
 		</ul>
 
 		<a href="#contactForm" class="button-wrapper">
@@ -86,7 +87,7 @@
 			<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 			<script>
 				var typed = new Typed('.multiText', {
-					strings: ["Web Designer" ,"Data Analyst", "IT Specialist", "Web Developer", "Athlete", "Coach"],
+					strings: ["Web Designer" ,"Data Analyst", "IT Specialist", "Full Stack Developer", "Web Developer", "Student Athlete", "Coach"],
 					typeSpeed: 80,
 					backSpeed: 80,
 					loop: true
@@ -161,7 +162,7 @@
 		<br>
 		<p> Hi! I'm Emily, and I'm currently pursuing a degree in Computer Science with an Asian Studies minor at Kennesaw State University. My passion lies in software engineering, web development, cybersecurity, and data science. Currently on the pathway to find out which field I love the most and would like to do for the rest of my life. I thrive on immersing myself in challenging projects, connecting with professional individuals, and picking up new skills whenever I can! </p>
 		<br
-		<p> <p> Outside of my career, I've been competing in the VALORANT competitive scene since 2021. I currently play for my school's team as their team captain, and I also coach a team from Western University (London, Ontario). If I had asked myself 5 years ago if I would see myself as a leader in the future, I'd say no. VALORANT was the birthplace of my leadership, team collaboration, and management skills. Due this day, I am very grateful to have competed in this game because not only did it allow me to grow as a developer, I grew as an individual.</p>
+		<p> Outside of my career, I've been competing in the VALORANT competitive scene since 2021. I currently play for my school's team as their team captain, and I also coach a team from Western University (London, Ontario). If I had asked myself 5 years ago if I would see myself as a leader in the future, I'd say no. VALORANT was the birthplace of my leadership, team collaboration, and management skills. Due this day, I am very grateful to have competed in this game because not only did it allow me to grow as a developer, I grew as an individual.</p>
 		<br>
 		<p>I love working with people and giving to the community - read more about my experience below!</p>
 		<br>
@@ -497,12 +498,31 @@
 		<!--  gallery  -->
 		<div class="gallery">
 
+			<!-- gupiteer -->
 			<div class="item code">
-				<img src="images/gupiteer/logo.png">
-				<div class="overlay">
-					<a href="images/gupiteer/logo.png">VIEW MORE</a>
+				<a href="javascript:void(0);" onclick="openPopup()">
+					<img src="images/gupiteer/logo.png" alt="GuPiTEER Logo">
+					<div class="overlay">
+						GuPiTEER
+					</div>
+				</a>
+			</div>
+
+			<div id="project-popup" class="popup">
+				<div class="popup-content">
+					<span class="close-button" onclick="closePopup()">&times;</span>
+					<h2>GuPiTEER</h2>
+					<br>
+					<p>GuPiTEER, a comprehensive solution, centralizes access to multiple GPTs. Users can select previous chats for context, enhancing relevance and continuity. The validation system ensures accuracy, streamlining AI interactions. Professionals, students, and workflow optimizers benefit from this efficient tool. API access empowers developers. In summary, GuPiTEER stands out as a valuable platform for harnessing AI power in various projects. 🚀</p>
+					<br>
+					<p><b>Client: </b>Hacklytics 2024 @ Georgia Institute of Technology</p>	
+					<p><b>Technologies:</b> HTML, CSS, JavaScript, Flask, Python, React.js, APIs, LLMs</p>
+					<p>Link: <a href="https://devfolio.co/projects/gupiteer-bcc3" target="_blank">GuPiTEER Demo </a></p>
+					<p>GitHub: <a href="https://github.com/itswindee/gupiteer" target="_blank">GuPiTEER Repository</a></p>
 				</div>
 			</div>
+			
+			
 
 			<div class="item design">
 				<img src="images/design2.jpg">
@@ -544,19 +564,21 @@
 
 <br>
 
+<!-- leaving this out for now -->
 <!--  testimonials section  -->
-<section class="testimonials reusable" id="testimonials">
+<!-- <section class="testimonials reusable" id="testimonials">
 	
 	<header class="headings">
 		<h3>Testimonials</h3>
 		<h1>What People Say About Me</h1>
 	</header>
+-->
 
 	<!--  owl carousel slide container -->
-	<div class="owl-carousel owl-theme testimonials-container">
+	<!-- <div class="owl-carousel owl-theme testimonials-container"> -->
 
 		<!--   card 1  -->
-		<div class="item testimonial-card">
+		<!--<div class="item testimonial-card">
 			<main class="test-card-body">
 			<div class="quote">
 			<i class="fa fa-quote-left"></i>
@@ -584,10 +606,11 @@
 				</div>
 			</div>
 		</div>
+	-->
     	
 
     	<!--   card 2   -->
-    	<div class="item testimonial-card">
+    	<!--<div class="item testimonial-card">
     		<main class="test-card-body">
     			<div class="quote">
     				<i class="fa fa-quote-left"></i>
@@ -608,9 +631,10 @@
     			</div>
     		</div>
     	</div>
+	-->
 
     	<!--   card 3  -->
-    	<div class="item testimonial-card">
+    	<!--<div class="item testimonial-card">
     		<main class="test-card-body">
     			<div class="quote">
     				<i class="fa fa-quote-left"></i>
@@ -628,9 +652,10 @@
     			</div>
     		</div>
     	</div>
+	-->
 
     	<!--   card 4   -->
-    	<div class="item testimonial-card">
+    	<!--<div class="item testimonial-card">
     		<main class="test-card-body">
     			<div class="quote">
     				<i class="fa fa-quote-left"></i>
@@ -648,9 +673,10 @@
     			</div>
     		</div>
     	</div>
+	-->
 
     	<!--   card 5  -->
-    	<div class="item testimonial-card">
+    	<!--<div class="item testimonial-card">
     		<main class="test-card-body">
     			<div class="quote">
     				<i class="fa fa-quote-left"></i>
@@ -668,9 +694,9 @@
     			</div>
     		</div>
     	</div>
-
+	-->
     	<!--   card 6 -->
-    	<div class="item testimonial-card">
+    	<!--<div class="item testimonial-card">
     		<main class="test-card-body">
     			<div class="quote">
     				<i class="fa fa-quote-left"></i>
@@ -689,7 +715,7 @@
     		</div>
     	</div>
 	</div>
-
+-->
 
 
 <!--   contact section -->
@@ -744,22 +770,18 @@
 
 	</div>
 </section>
-<!--   *** Contact Section Ends ***   -->
 
-<!--   *** Footer Section Starts ***   -->
+<!--   footer  -->
 <section class="page-footer">
 	
 	<footer class="footer-contents">
 		<a href="#">Emily</a>
 		<p><span>Emily Zhu</span></p>
 	</footer>
-	
+
 </section>
-<!--   *** Footer Section Ends ***   -->
-
-
-
 </div>
+
 <!--   *** Website Container Ends ***   -->
 
 
