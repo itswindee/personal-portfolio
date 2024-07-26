@@ -46,13 +46,50 @@ function scrollFunction(){
 }
 
 // portfolio section
-function openPopup() {
-    document.getElementById("project-popup").style.display = "block";
+function openPopup(project) {
+    var title, description, client, technologies, link, github;
+
+    switch(project) {
+        case 'gupiteer':
+            title = `GuPiTEER`;
+            description = `GuPiTEER, a comprehensive solution, centralizes access to multiple GPTs. Users can select previous chats for context, enhancing relevance and continuity. The validation system ensures accuracy, streamlining AI interactions. Professionals, students, and workflow optimizers benefit from this efficient tool. API access empowers developers. In summary, GuPiTEER stands out as a valuable platform for harnessing AI power in various projects. 🚀`;
+            client = `Hacklytics 2024 @ Georgia Institute of Technology`;
+            technologies = `HTML, CSS, JavaScript, Flask, Python, React.js, APIs, LLMs`;
+            link = "https://devfolio.co/projects/gupiteer-bcc3";
+            github = "https://github.com/itswindee/gupiteer";
+            break;
+        case 'littleTreasures':
+            title = `Little Treasures`;
+            description = `In today's fast-paced world, it's easy to overlook the small moments that bring true happiness and fulfillment. Little Treasures is a mobile app designed to help users pause, reflect, and cherish these fleeting yet meaningful moments. Each day, users are prompted to identify and record their "little treasures" – moments of joy, gratitude, or connection – by writing a brief description or attaching a photo. This practice fosters a mindset shift towards embracing life's simple pleasures, cultivating greater gratitude, happiness, and mental well-being. Targeting busy individuals experiencing stress and anxiety, Little Treasures stands out in the growing mental wellness app market by emphasizing the celebration of small moments. Little Treasures serves as a gentle reminder to slow down, appreciate, and savor life's little joys.`;
+            client = `Well-Being Hackathon 2.0 @ Kennesaw State University`;
+            technologies = `HTML, CSS, JavaScript, Node.js, Express, MongoDB`;
+            link = "https://project2.demo.link";
+            github = "https://github.com/user/project2";
+            break;
+        // Add more cases for additional projects
+        default:
+            title = "Unknown Project";
+            description = "No description available.";
+            client = "Unknown Client";
+            technologies = "Unknown Technologies";
+            link = "#";
+            github = "#";
+    }
+
+    document.getElementById('popup-title').textContent = title;
+    document.getElementById('popup-description').textContent = description;
+    document.getElementById('popup-client').textContent = client;
+    document.getElementById('popup-technologies').textContent = technologies;
+    document.getElementById('popup-link').href = link;
+    document.getElementById('popup-github').href = github;
+
+    document.getElementById('project-popup').style.display = 'block';
 }
 
 function closePopup() {
-    document.getElementById("project-popup").style.display = "none";
+    document.getElementById('project-popup').style.display = 'none';
 }
+
 var $galleryContainer = $('.gallery').isotope({
 	itemSelector: '.item',
 	layoutMode: 'fitRows'
